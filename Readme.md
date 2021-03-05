@@ -54,8 +54,8 @@ Observation Space - Box(-num, num, (4,), float32) :<br>
 - Pole Angle (-0.41, 0.41)
 - Pole Velocity At Tip (-inf, inf)
 
-Reward - int32 :<br>
-It always returns 1 as reward. If succeeded, you can take max 200 rewards in a single episode. (This will be the goal for learning.)
+Reward - float32 :<br>
+It always returns 1.0 as reward. If succeeded, you can take max 200 rewards in a single episode. (This will be the goal for learning.)
 
 > Note : Call ```render()``` when you want to show current state in visual UI.<br>
 > ![CartPole rendering](assets/cart-pole.png?raw=true)
