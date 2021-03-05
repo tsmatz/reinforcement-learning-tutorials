@@ -2,8 +2,8 @@
 
 This content shows you what's doing in typical reinforcement learning (RL) methods with several lines of code.
 
-1. [Q-Learning](https://github.com/tsmatz/reinforcement-learning-tutorials/blob/master/01-q-learning.ipynb)
-2. [Policy Gradient](https://github.com/tsmatz/reinforcement-learning-tutorials/blob/master/02-policy-gradient.ipynb)
+1. [Q-Learning](01-q-learning.ipynb)
+2. [Policy Gradient](02-policy-gradient.ipynb)
 3. [Actor Critic](03-actor-critic.ipynb)
 4. [Deep Reinforcement Learning in Minecraft](https://github.com/tsmatz/minerl-maze-sample)
 
