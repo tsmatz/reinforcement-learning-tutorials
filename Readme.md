@@ -8,7 +8,7 @@ This content shows you what's doing in typical reinforcement learning (RL) metho
 4. [Deep Reinforcement Learning in Minecraft](https://github.com/tsmatz/minerl-maze-sample)
 
 Through these contents in this repository, CartPole environemnt is used for running RL.<br>
-See below for this environemnt (about action space, observation space, and rewards).
+See below about specs (action space, observation space, and rewards) for this environment.
 
 <u>sample code</u>
 
@@ -54,10 +54,10 @@ Observation Space - Box(-num, num, (4,), float32) :<br>
 - Pole Angle (-0.41, 0.41)
 - Pole Velocity At Tip (-inf, inf)
 
-Reward :<br>
+Reward - int32 :<br>
 It always returns 1 as reward. If succeeded, you can take max 200 rewards in a single episode. (This will be the goal for learning.)
 
-> Note : Call ```render()``` to show current state in visual UI.<br>
+> Note : Call ```render()``` when you want to show current state in visual UI.<br>
 > ![CartPole rendering](assets/cart-pole.png?raw=true)
 
 *Tsuyoshi Matsuzaki @ Microsoft*
