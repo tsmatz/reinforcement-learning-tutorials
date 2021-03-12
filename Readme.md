@@ -5,7 +5,7 @@ This content shows you what's doing in typical reinforcement learning (RL) metho
 1. [Q-Learning](01-q-learning.ipynb)
 2. [Policy Gradient](02-policy-gradient.ipynb)
 3. [Actor Critic](03-actor-critic.ipynb)
-4. [Deep Reinforcement Learning in Minecraft](https://github.com/tsmatz/minerl-maze-sample)
+4. [Deep Reinforcement Learning in Minecraft](https://github.com/tsmatz/malmo-maze-sample)
 
 Through these contents in this repository, CartPole environemnt is used for running RL.<br>
 See below about specs (action space, observation space, and rewards) for this environment.
