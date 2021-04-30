@@ -7,7 +7,7 @@ These contents show you what's doing in typical reinforcement learning (RL) meth
 1. [Q-Learning](01-q-learning.ipynb)
 2. [Policy Gradient](02-policy-gradient.ipynb)
 3. [Actor Critic](03-actor-critic.ipynb)
-4. [Deep Reinforcement Learning in Minecraft](https://github.com/tsmatz/malmo-maze-sample)
+4. [Deep Reinforcement Learning in Minecraft](https://github.com/tsmatz/malmo-maze-sample) (Practical Example)
 
 ## About CartPole environemnt
 
