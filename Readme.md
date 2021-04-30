@@ -1,14 +1,31 @@
-# Reinforcement Learning Tutorials
+# Reinforcement Learning Python Tutorials
 
-This content shows you what's doing in typical reinforcement learning (RL) methods with several lines of code.
+These contents show you what's doing in typical reinforcement learning (RL) methods with several lines of Python code.
+
+## Table of Contents
 
 1. [Q-Learning](01-q-learning.ipynb)
 2. [Policy Gradient](02-policy-gradient.ipynb)
 3. [Actor Critic](03-actor-critic.ipynb)
 4. [Deep Reinforcement Learning in Minecraft](https://github.com/tsmatz/malmo-maze-sample)
 
-Through these contents in this repository, CartPole environemnt is used for running RL.<br>
-See below about specs (action space, observation space, and rewards) for this environment.
+## About CartPole environemnt
+
+Through these contents in this repository, CartPole environemnt is commonly used for running RL.<br>
+See below about specifications (action space, observation space, and rewards) for this environment.
+
+Action Space - Discrete(2) :<br>
+- 0 : Push cart to the left
+- 1 : Push cart to the right
+
+Observation Space - Box(-num, num, (4,), float32) :<br>
+- Cart Position (-4.8, 4.8)
+- Cart Velocity (-inf, inf)
+- Pole Angle (-0.41, 0.41)
+- Pole Velocity At Tip (-inf, inf)
+
+Reward - float32 :<br>
+It always returns 1.0 as reward. If succeeded, you can take max 200 rewards in a single episode. (This will be the goal for learning.)
 
 <u>sample code</u>
 
@@ -43,19 +60,6 @@ state: 0.0030316374875831464, -0.383185104857609, 0.03422738292594538, 0.5757584
 action: 1,  reward: 1.0
 state: -0.004632064609569034, -0.18855925062821827, 0.04574255119766431, 0.2940515065957076
 ```
-
-Action Space - Discrete(2) :<br>
-- 0 : Push cart to the left
-- 1 : Push cart to the right
-
-Observation Space - Box(-num, num, (4,), float32) :<br>
-- Cart Position (-4.8, 4.8)
-- Cart Velocity (-inf, inf)
-- Pole Angle (-0.41, 0.41)
-- Pole Velocity At Tip (-inf, inf)
-
-Reward - float32 :<br>
-It always returns 1.0 as reward. If succeeded, you can take max 200 rewards in a single episode. (This will be the goal for learning.)
 
 > Note : Call ```render()``` when you want to show current state in visual UI.<br>
 > ![CartPole rendering](assets/cart-pole.png?raw=true)
