@@ -1,4 +1,4 @@
-# Reinforcement Learning Python Tutorials
+# Reinforcement Learning algorithms by Python
 
 These contents show you what's doing in typical reinforcement learning (RL) methods with several lines of Python code.
 
