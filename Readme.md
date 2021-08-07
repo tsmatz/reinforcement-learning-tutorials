@@ -10,10 +10,11 @@ These contents show you what's doing in typical reinforcement learning (RL) meth
 4. [PPO (Proximal Policy Optimization)](04-ppo.ipynb)
 5. [Deep Reinforcement Learning in Minecraft](https://github.com/tsmatz/malmo-maze-sample) (Practical Example)
 
-## About CartPole environemnt
+Through these examples in this repository, we commonly use primitive **CartPole** environment to learn as follows.
 
-Through these contents in this repository, CartPole environemnt is commonly used for running RL.<br>
-See below about specifications (action space, observation space, and rewards) for this environment.
+## About Example Environemnt (CartPole)
+
+See below about specifications - such as, action space, observation space, and rewards - for example environment (CartPole).
 
 Action Space - Discrete(2) :<br>
 - 0 : Push cart to the left
@@ -26,9 +27,9 @@ Observation Space - Box(-num, num, (4,), float32) :<br>
 - Pole Velocity At Tip (-inf, inf)
 
 Reward - float32 :<br>
-It always returns 1.0 as reward. If succeeded, you can take max 200 rewards in a single episode. (This will be the goal for learning.)
+It always returns 1.0 as reward. If completely succeeded, you can take max 200.0 rewards in a single episode. (i.e, This will be the goal for learning.)
 
-<u>sample code</u>
+<u>Sample Code to run CartPole</u>
 
 ```
 import gym
@@ -50,7 +51,7 @@ for i in range(1):
 env.close()
 ```
 
-<u>output</u>
+<u>Output Result (Example)</u>
 
 ```
 start episode 0
@@ -62,7 +63,7 @@ action: 1,  reward: 1.0
 state: -0.004632064609569034, -0.18855925062821827, 0.04574255119766431, 0.2940515065957076
 ```
 
-> Note : Call ```render()``` when you want to show current state in visual UI.<br>
+> Note : Call ```render()``` when you want to show current state in the following visual UI.<br>
 > ![CartPole rendering](assets/cart-pole.png?raw=true)
 
 *Tsuyoshi Matsuzaki @ Microsoft*
