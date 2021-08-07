@@ -16,20 +16,20 @@ Through these examples in this repository, we commonly use primitive **CartPole*
 
 See below about specifications - such as, action space, observation space, and rewards - for example environment (CartPole).
 
-Action Space - Discrete(2) :<br>
+**Action Space** - Discrete(2) :<br>
 - 0 : Push cart to the left
 - 1 : Push cart to the right
 
-Observation Space - Box(-num, num, (4,), float32) :<br>
+**Observation Space** - Box(-num, num, (4,), float32) :<br>
 - Cart Position (-4.8, 4.8)
 - Cart Velocity (-inf, inf)
 - Pole Angle (-0.41, 0.41)
 - Pole Velocity At Tip (-inf, inf)
 
-Reward - float32 :<br>
+**Reward** - float32 :<br>
 It always returns 1.0 as reward. If completely succeeded, you can take max 200.0 rewards in a single episode. (i.e, This will be the goal for learning.)
 
-<u>Sample Code to run CartPole</u>
+**Sample Code to run CartPole**
 
 ```
 import gym
@@ -51,7 +51,7 @@ for i in range(1):
 env.close()
 ```
 
-<u>Output Result (Example)</u>
+**Output Result (Example)**
 
 ```
 start episode 0
