@@ -63,7 +63,7 @@ action: 1,  reward: 1.0
 state: -0.004632064609569034, -0.18855925062821827, 0.04574255119766431, 0.2940515065957076
 ```
 
-> Note : Call ```render()``` when you want to show current state in the following visual UI.<br>
+> Note : Call ```render()``` when you want to show the current state in the following visual UI.<br>
 > ![CartPole rendering](assets/cart-pole.png?raw=true)
 
 *Tsuyoshi Matsuzaki @ Microsoft*
