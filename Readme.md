@@ -30,7 +30,8 @@ See below about specifications - such as, action space, observation space, and r
 
 **Reward** - float32 :
 
-It always returns 1.0 as reward. If completely succeeded, you can take max 200.0 rewards in a single episode. (i.e, This will be the goal for learning.)
+It always returns 1.0 as reward.<br>
+If completely succeeded, you can take max 200.0 rewards in a single episode. (i.e, This will be the goal for learning.)
 
 **Sample Code to run CartPole**
 
