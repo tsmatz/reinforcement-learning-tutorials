@@ -8,7 +8,7 @@ This repository shows you what's doing in typical reinforcement learning (RL) me
 2. [Policy Gradient](02-policy-gradient.ipynb)
 3. [Actor Critic](03-actor-critic.ipynb)
 4. [PPO (Proximal Policy Optimization)](04-ppo.ipynb)
-5. [Deep Reinforcement Learning in Minecraft](https://github.com/tsmatz/malmo-maze-sample) (Practical Example)
+5. [Deep Reinforcement Learning in Minecraft](https://github.com/tsmatz/minecraft-rl-example) (Practical Example)
 
 Through these examples in this repository, we commonly use primitive **CartPole** environment to learn as follows.
 
