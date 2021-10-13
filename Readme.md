@@ -12,29 +12,33 @@ This repository shows you what's doing in typical reinforcement learning (RL) me
 
 Through these examples in this repository, we commonly use primitive **CartPole** environment to learn as follows.
 
-## About Example Environemnt (CartPole)
+## Example Environemnt (CartPole-v0)
 
-See below about specifications - such as, action space, observation space, and rewards - for example environment (CartPole).
+In these examples, I commonly use familiar CartPole environment (env) for running the agent in the training.
 
-**Action Space** - Discrete(2) :
+See below for the detailed specification of this environment (CartPole-v0) - such as, action space, observation space, and rewards.
+
+**Action Space** - Type : Discrete(2)
 
 - 0 : Push cart to the left
 - 1 : Push cart to the right
 
-**Observation Space** - Box(-num, num, (4,), float32) :
+**Observation Space** - Type : Box(-num, num, (4,), float32)
 
 - Cart Position (-4.8, 4.8)
 - Cart Velocity (-inf, inf)
 - Pole Angle (-0.41, 0.41)
 - Pole Velocity At Tip (-inf, inf)
 
-**Reward** - float32 :
+**Reward** - Type : float32
 
 It always returns 1.0 as reward.<br>
-If completely succeeded, you can take max 200.0 rewards in a single episode. (i.e, This will be the goal for learning.)
+If completely succeeded, you can take max 200.0 rewards in a single episode. (i.e, This will be the goal for learnings.)
 
 **Sample Code to run CartPole**
 
+<u>source code</u>
+ 
 ```
 import gym
 import random
@@ -55,7 +59,7 @@ for i in range(1):
 env.close()
 ```
 
-**Output Result (Example)**
+<u>output result (example)</u>
 
 ```
 start episode 0
@@ -67,7 +71,7 @@ action: 1,  reward: 1.0
 state: -0.004632064609569034, -0.18855925062821827, 0.04574255119766431, 0.2940515065957076
 ```
 
-> Note : Call ```render()``` when you want to show the current state in the following visual UI.<br>
+> Note : Call ```render()``` when you want to show the current state in visual UI as follows.<br>
 > ![CartPole rendering](assets/cart-pole.png?raw=true)
 
 *Tsuyoshi Matsuzaki @ Microsoft*
