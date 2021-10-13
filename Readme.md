@@ -37,7 +37,7 @@ If completely succeeded, you can take max 200.0 rewards in a single episode. (i.
 
 **Sample Code to run CartPole**
 
-<u>source code</u>
+<ins>source code</ins>
  
 ```
 import gym
@@ -59,7 +59,7 @@ for i in range(1):
 env.close()
 ```
 
-<u>output result (example)</u>
+<ins>output result (example)</ins>
 
 ```
 start episode 0
