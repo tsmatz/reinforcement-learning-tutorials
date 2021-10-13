@@ -10,8 +10,6 @@ This repository shows you what's doing in typical reinforcement learning (RL) me
 4. [PPO (Proximal Policy Optimization)](04-ppo.ipynb)
 5. [Deep Reinforcement Learning in Minecraft](https://github.com/tsmatz/minecraft-rl-example) (Practical Example)
 
-Through these examples in this repository, we commonly use primitive **CartPole** environment to learn as follows.
-
 ## Example Environemnt (CartPole-v0)
 
 In these examples, I commonly use familiar CartPole environment (env) for running the agent in the training.
