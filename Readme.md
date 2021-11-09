@@ -1,4 +1,4 @@
-# Reinforcement Learning algorithms by Python from Scratch
+# Python Tutorial for Reinforcement Learning algorithms
 
 This repository shows you what's doing in typical reinforcement learning (RL) methods with intuitive (but mathematical) explanations and several lines of Python code.
 
