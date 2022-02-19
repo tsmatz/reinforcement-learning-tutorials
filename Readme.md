@@ -5,8 +5,8 @@ This repository shows you what's doing in typical reinforcement learning (RL) me
 ## Table of Contents
 
 1. [Q-Learning](01-q-learning.ipynb)
-2. [Policy Gradient](02-policy-gradient.ipynb) (on-policy)
-3. [Actor Critic](03-actor-critic.ipynb)
+2. [Policy Gradient method](02-policy-gradient.ipynb) (on-policy)
+3. [Actor Critic method](03-actor-critic.ipynb)
 4. [PPO (Proximal Policy Optimization)](04-ppo.ipynb) (on-policy)
 5. [DDPG (Deep Deterministic Policy Gradient)](05-ddpg.ipynb) (off-policy)
 6. [SAC (Soft Actor-Critic)](06-sac.ipynb) (off-policy)
@@ -14,7 +14,7 @@ This repository shows you what's doing in typical reinforcement learning (RL) me
 
 ## Example Environemnt (CartPole-v0)
 
-In these examples, I commonly use familiar CartPole environment (env) for running the agent in the training.
+In these examples, I commonly use a widely used CartPole environment (env).
 
 See below for the detailed specification of this environment (CartPole-v0) - such as, action space, observation space, and rewards.
 
@@ -33,7 +33,7 @@ See below for the detailed specification of this environment (CartPole-v0) - suc
 **Reward** - Type : float32
 
 It always returns 1.0 as reward.<br>
-If completely succeeded, you can take max 200.0 rewards in a single episode. (i.e, This will be the goal for learnings.)
+If completely succeeded, you can take max 200.0 rewards in a single episode. (A single episode will end at max 200 actions.)
 
 **Sample Code to run CartPole**
 
