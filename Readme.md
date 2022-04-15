@@ -10,7 +10,8 @@ This repository shows you what's doing in typical reinforcement learning (RL) me
 4. [PPO (Proximal Policy Optimization)](04-ppo.ipynb) (on-policy)
 5. [DDPG (Deep Deterministic Policy Gradient)](05-ddpg.ipynb) (off-policy)
 6. [SAC (Soft Actor-Critic)](06-sac.ipynb) (off-policy)
-7. RLlib Example : [Deep Reinforcement Learning in Minecraft](https://github.com/tsmatz/minecraft-rl-example)
+
+To learn algorithms, all these examples are written in Python from scratch. See [here (Minecraft example)](https://github.com/tsmatz/minecraft-rl-example) for building scripts with RLlib library.
 
 ## Example Environemnt (CartPole-v0)
 
