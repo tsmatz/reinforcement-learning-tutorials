@@ -1,6 +1,6 @@
 # Reinforcement Learning algorithms (Python Tutorial)
 
-This repository shows you what's doing in typical reinforcement learning (RL) methods with intuitive (but mathematical) explanations and several lines of Python code.
+This repository shows you theoretical fundamentals in typical reinforcement learning (RL) methods with intuitive (but mathematical) explanations and several lines of Python code.
 
 ## Table of Contents
 
@@ -11,34 +11,35 @@ This repository shows you what's doing in typical reinforcement learning (RL) me
 5. [DDPG (Deep Deterministic Policy Gradient)](05-ddpg.ipynb) (off-policy)
 6. [SAC (Soft Actor-Critic)](06-sac.ipynb) (off-policy)
 
-To learn algorithms, all these examples are written in Python from scratch. See [here (Minecraft example)](https://github.com/tsmatz/minecraft-rl-example) for building scripts with RLlib library.
+All these examples are written in Python from scratch (without RL libraries).<br>
+See [here (Minecraft example)](https://github.com/tsmatz/minecraft-rl-example) for building scripts with RLlib library.
 
 ## Example Environemnt (CartPole-v0)
 
-In these examples, I commonly use a widely used CartPole environment (env).
+In all examples, I commonly use a widely used CartPole environment (env).
 
-See below for the detailed specification of this environment (CartPole-v0) - such as, action space, observation space, and rewards.
+See below for the specification of this environment (```CartPole-v0```) - such as, actions, states (observations), and rewards.
 
-**Action Space** - Type : Discrete(2)
+**Action Space** - Type : ```Discrete(2)```
 
-- 0 : Push cart to the left
-- 1 : Push cart to the right
+- ```0``` : Push cart to the left
+- ```1``` : Push cart to the right
 
-**Observation Space** - Type : Box(-num, num, (4,), float32)
+**Observation Space** - Type : ```Box(-num, num, (4,), float32)```
 
-- Cart Position (-4.8, 4.8)
-- Cart Velocity (-inf, inf)
-- Pole Angle (-0.41, 0.41)
-- Pole Velocity At Tip (-inf, inf)
+- Cart Position ```(-4.8, 4.8)```
+- Cart Velocity ```(-inf, inf)```
+- Pole Angle ```(-0.41, 0.41)```
+- Pole Velocity At Tip ```(-inf, inf)```
 
-**Reward** - Type : float32
+**Reward** - Type : ```float32```
 
-It always returns 1.0 as reward.<br>
-If completely succeeded, you can take max 200.0 rewards in a single episode. (A single episode will end at max 200 actions.)
+It always returns ```1.0``` as reward.<br>
+If completely succeeded, you can then take max ```200.0``` rewards in a single episode. (Because a single episode will end at max ```200``` actions.)
 
 **Sample Code to run CartPole**
 
-<ins>source code</ins>
+<ins>source code (Python)</ins>
  
 ```
 import gym
@@ -60,7 +61,7 @@ for i in range(1):
 env.close()
 ```
 
-<ins>output result (example)</ins>
+<ins>output result</ins>
 
 ```
 start episode 0
