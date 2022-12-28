@@ -1,6 +1,6 @@
-# Reinforcement Learning algorithms (Python Tutorial)
+# Reinforcement Learning Algorithms Tutorial (Python)
 
-This repository shows you theoretical fundamentals in typical reinforcement learning (RL) methods with intuitive (but mathematical) explanations and several lines of Python code.
+This repository shows you theoretical fundamentals for typical reinforcement learning methods (model-free algorithms) with intuitive (but mathematical) explanations and several lines of Python code.
 
 ## Table of Contents
 
@@ -11,8 +11,8 @@ This repository shows you theoretical fundamentals in typical reinforcement lear
 5. [DDPG (Deep Deterministic Policy Gradient)](05-ddpg.ipynb) (off-policy)
 6. [SAC (Soft Actor-Critic)](06-sac.ipynb) (off-policy)
 
-All these examples are written in Python from scratch without RL libraries.<br>
-(See [here (Minecraft example)](https://github.com/tsmatz/minecraft-rl-example) for building scripts with RLlib library.)
+All these examples are written in Python from scratch without any RL (reinforcement learning) libraries - such as, RLlib, Stable Baselines, etc.<br>
+See [here (Minecraft example)](https://github.com/tsmatz/minecraft-rl-example) for building scripts with RLlib library.
 
 ## Example Environemnt (CartPole-v0)
 
