@@ -18,7 +18,7 @@ See [here (Minecraft example)](https://github.com/tsmatz/minecraft-rl-example) f
 
 In all examples, I commonly use a widely used CartPole environment (env).
 
-See below for the specification of this environment (```CartPole-v0```) - such as, actions, states (observations), and rewards.
+See below for the specification of this environment (```CartPole-v1```) - such as, actions, states (observations), and rewards.
 
 **Action Space** - Type : ```Discrete(2)```
 
