@@ -82,6 +82,6 @@ class CartPole():
             self._state[0] > self.x_threshold or \
             self._state[2] < -self.theta_threshold or \
             self._state[2] > self.theta_threshold or \
-            self._step == 200
+            self._step == 500
         self._done = bool(done)
         return self._state, 1.0, self._done, {}

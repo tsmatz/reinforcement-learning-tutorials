@@ -14,7 +14,7 @@ This repository shows you theoretical fundamentals for typical reinforcement lea
 All these examples are written in Python from scratch without any RL (reinforcement learning) libraries - such as, RLlib, Stable Baselines, etc.<br>
 See [here (Minecraft example)](https://github.com/tsmatz/minecraft-rl-example) for building scripts with RLlib library.
 
-## Example Environemnt (CartPole-v0)
+## Example Environemnt (CartPole-v1)
 
 In all examples, I commonly use a widely used CartPole environment (env).
 
@@ -35,7 +35,7 @@ See below for the specification of this environment (```CartPole-v0```) - such a
 **Reward** - Type : ```float32```
 
 It always returns ```1.0``` as reward.<br>
-If completely succeeded, you can then take max ```200.0``` rewards in a single episode. (Because a single episode will end at max ```200``` actions.)
+If completely succeeded, you can then take max ```500.0``` rewards in a single episode, because a single episode will be truncated on max ```500``` actions.
 
 **Sample Code to run CartPole**
 
@@ -52,10 +52,11 @@ env = gym.make("CartPole-v0")
 for i in range(1):
   print("start episode {}".format(i))
   done = False
-  s = env.reset()
+  s, _ = env.reset()
   while not done:
     a = pick_sample()
-    s, r, done, _ = env.step(a)
+    s, r, term, trunc, _ = env.step(a)
+    done = term or trunc
     print("action: {},  reward: {}".format(a, r))
     print("state: {}, {}, {}, {}".format(s[0], s[1], s[2], s[3]))
 env.close()
