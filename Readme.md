@@ -48,7 +48,7 @@ import random
 def pick_sample():
   return random.randint(0, 1)
 
-env = gym.make("CartPole-v0")
+env = gym.make("CartPole-v1")
 for i in range(1):
   print("start episode {}".format(i))
   done = False
