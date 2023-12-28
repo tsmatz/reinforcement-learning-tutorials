@@ -75,6 +75,6 @@ state: -0.004632064609569034, -0.18855925062821827, 0.04574255119766431, 0.29405
 ```
 
 > Note : Call ```render()``` when you want to show the current state in visual UI as follows.<br>
-> ![CartPole rendering](assets/cart-pole.png?raw=true)
+> ![CartPole rendering](assets/cart-pole.png)
 
 *Tsuyoshi Matsuzaki @ Microsoft*
