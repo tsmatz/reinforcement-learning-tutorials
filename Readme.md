@@ -14,7 +14,7 @@ This repository shows you theoretical fundamentals for typical reinforcement lea
 All these examples are written in Python from scratch without any RL (reinforcement learning) libraries - such as, RLlib, Stable Baselines, etc.<br>
 See [here (Minecraft example)](https://github.com/tsmatz/minecraft-rl-example) for building scripts with RLlib library.
 
-> Note : To simplify, all examples doesn't run as a batch. (The agent always runs one-by-one.)<br>
+> Note : To simplify, any example doesn't run as a batch. (The agent always runs one-by-one.)<br>
 > To speed up training at scale, please apply batch in practical use.
 
 ## Example Environemnt (CartPole-v1)
