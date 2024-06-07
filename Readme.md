@@ -4,7 +4,7 @@ This repository shows you theoretical fundamentals for typical reinforcement lea
 
 ## Table of Contents
 
-1. [Q-Learning](01-q-learning.ipynb)
+1. [Q-Learning](00-q-learning.ipynb)
 2. [Policy Gradient method](02-policy-gradient.ipynb) (on-policy)
 3. [Actor Critic method](03-actor-critic.ipynb)
 4. [PPO (Proximal Policy Optimization)](04-ppo.ipynb) (on-policy)
