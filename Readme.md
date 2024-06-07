@@ -4,12 +4,13 @@ This repository shows you theoretical fundamentals for typical reinforcement lea
 
 ## Table of Contents
 
-1. [Q-Learning](00-q-learning.ipynb)
-2. [Policy Gradient method](02-policy-gradient.ipynb) (on-policy)
-3. [Actor Critic method](03-actor-critic.ipynb)
-4. [PPO (Proximal Policy Optimization)](04-ppo.ipynb) (on-policy)
-5. [DDPG (Deep Deterministic Policy Gradient)](05-ddpg.ipynb) (off-policy)
-6. [SAC (Soft Actor-Critic)](06-sac.ipynb) (off-policy)
+- [Q-Learning](00-q-learning.ipynb)
+- [Deep Q-Network (DQN)](01-dqn.ipynb) (off-policy)
+- [Policy Gradient method](02-policy-gradient.ipynb) (on-policy)
+- [Actor Critic method](03-actor-critic.ipynb)
+- [PPO (Proximal Policy Optimization)](04-ppo.ipynb) (on-policy)
+- [DDPG (Deep Deterministic Policy Gradient)](05-ddpg.ipynb) (off-policy)
+- [SAC (Soft Actor-Critic)](06-sac.ipynb) (off-policy)
 
 All these examples are written in Python from scratch without any RL (reinforcement learning) libraries - such as, RLlib, Stable Baselines, etc.<br>
 See [here (Minecraft example)](https://github.com/tsmatz/minecraft-rl-example) for building scripts with RLlib library.
