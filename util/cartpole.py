@@ -15,7 +15,7 @@ class CartPole():
 
         self.x_threshold = 1.0
         self.theta_threshold = 12 * 2 * math.pi / 360
-        
+
         self._state = []
         self._done = True
 
@@ -34,7 +34,7 @@ class CartPole():
         return self._state
 
     def step(self, action: float):
-        """ 
+        """
         Args:
             action: float value between -1.0 and 1.0
         """
@@ -78,10 +78,12 @@ class CartPole():
         # (CartPole-v0 uses numpy.ndarray for state,
         #  but here returns Python array.)
         self._state = [self._cart_position, self._cart_velocity, self._pole_angle, self._pole_angular_velocity]
-        done = self._state[0] < -self.x_threshold or \
+        term = self._state[0] < -self.x_threshold or \
             self._state[0] > self.x_threshold or \
             self._state[2] < -self.theta_threshold or \
-            self._state[2] > self.theta_threshold or \
-            self._step == 500
-        self._done = bool(done)
-        return self._state, 1.0, self._done, {}
+            self._state[2] > self.theta_threshold
+        term = bool(term)
+        trunc = (self._step == 500)
+        trunc = bool(trunc)
+        self._done = bool(term or trunc)
+        return self._state, 1.0, term, trunc, {}
