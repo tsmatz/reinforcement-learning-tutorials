@@ -15,12 +15,12 @@ This repository shows you theoretical fundamentals for typical reinforcement lea
 All these examples are written in Python from scratch without any RL (reinforcement learning) libraries - such as, RLlib, Stable Baselines, etc.<br>
 See [here (Minecraft example)](https://github.com/tsmatz/minecraft-rl-example) for building scripts with RLlib library.
 
-> Note : To simplify, any example doesn't run as a batch. (The agent always runs one-by-one.)<br>
-> To speed up training at scale, please apply batch in practical use.
+> Note : To simplify, any example doesn't run inference as a batch. (The agent always runs inference one-by-one.)<br>
+> To speed up, please apply batch in practice to collect data.
 
 ## Example Environemnt (CartPole-v1)
 
-In all examples, I commonly use a widely used CartPole environment.
+In all examples, I commonly use a widely used CartPole environment version 1.
 
 See below for the specification of this environment (```CartPole-v1```) - such as, actions, states (observations), and rewards.
 
@@ -41,7 +41,16 @@ See below for the specification of this environment (```CartPole-v1```) - such a
 It always returns ```1.0``` as reward.<br>
 If completely succeeded, you can then take max ```500.0``` rewards in a single episode, because a single episode will be truncated on max ```500``` actions.
 
+**Done Flag (Termination and Truncation)** - Type : ```bool```
+
+It returns the following 2 types of done flag, which is used to check whether the episode is done or not.
+
+- Termination flag : When the agent fails and cannot work any more, termination flag is ```True```, otherwise ```False```.
+- Truncation flag : When the agent reaches to max 500 actions (successful at final action), truncation flag is ```True```, otherwise ```False```. (The agent cannot work any more, also in this case.)
+
 **Sample Code to run CartPole**
+
+Here is the sample source code to run CartPole agent.
 
 <ins>source code (Python)</ins>
  
