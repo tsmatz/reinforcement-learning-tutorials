@@ -55,7 +55,7 @@ Here is the sample source code to run CartPole agent.
 <ins>source code (Python)</ins>
  
 ```
-import gym
+import gymnasium as gym
 import random
 
 def pick_sample():
